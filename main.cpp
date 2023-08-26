@@ -1,4 +1,7 @@
 #include <iostream>
+#include "src/ascii_to_image.h"
+#include "src/image_to_ascii.h"
+#include <string>
 int main(int argc, char *argv[])
 {
     if (argc > 1)
@@ -9,11 +12,11 @@ int main(int argc, char *argv[])
 
         if (argv[argc - 1][idx - 1] == 't')
         {
-            // text to img
+            ascii_to_image a("asdf");
         }
         else
         {
-            // img to text
+            image_to_ascii a("str");
         }
     }
     else
