@@ -1,4 +1,4 @@
-# Install script for directory: /home/lui/repos/asdf/image_to_ascii
+# Install script for directory: /home/lui/repos/image_to_ascii
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lui/repos/asdf/image_to_ascii/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lui/repos/image_to_ascii/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

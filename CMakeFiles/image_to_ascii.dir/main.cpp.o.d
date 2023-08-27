@@ -1,5 +1,5 @@
 CMakeFiles/image_to_ascii.dir/main.cpp.o: \
- /home/lui/repos/asdf/image_to_ascii/main.cpp /usr/include/stdc-predef.h \
+ /home/lui/repos/image_to_ascii/main.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -146,8 +146,8 @@ CMakeFiles/image_to_ascii.dir/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/lui/repos/asdf/image_to_ascii/src/ascii_to_image.h \
- /home/lui/repos/asdf/image_to_ascii/src/image_to_ascii.h \
+ /home/lui/repos/image_to_ascii/src/ascii_to_image.h \
+ /home/lui/repos/image_to_ascii/src/image_to_ascii.h \
  /usr/local/include/opencv4/opencv2/opencv.hpp \
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/local/include/opencv4/opencv2/core.hpp \

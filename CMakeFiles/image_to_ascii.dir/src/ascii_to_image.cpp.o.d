@@ -1,5 +1,5 @@
 CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.o: \
- /home/lui/repos/asdf/image_to_ascii/src/ascii_to_image.cpp \
+ /home/lui/repos/image_to_ascii/src/ascii_to_image.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -146,4 +146,4 @@ CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/lui/repos/asdf/image_to_ascii/src/ascii_to_image.h
+ /home/lui/repos/image_to_ascii/src/ascii_to_image.h
