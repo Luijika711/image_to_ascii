@@ -2,6 +2,7 @@
 #include "src/ascii_to_image.h"
 #include "src/image_to_ascii.h"
 #include <string>
+#include "opencv2/opencv.hpp"
 int main(int argc, char *argv[])
 {
     if (argc > 1)
