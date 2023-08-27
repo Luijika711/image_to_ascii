@@ -9,14 +9,17 @@ int main(int argc, char *argv[])
         int idx = 0;
         while (argv[argc - 1][idx] != '\0')
             idx++;
-
+        std::string filepath;
+        filepath = argv[argc - 1];
         if (argv[argc - 1][idx - 1] == 't')
         {
-            ascii_to_image a("asdf");
+            ascii_to_image a(filepath);
+            a.app();
         }
         else
         {
-            image_to_ascii a("str");
+            image_to_ascii a(filepath);
+            a.app();
         }
     }
     else
