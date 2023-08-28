@@ -153,54 +153,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_to_ascii.dir/build.make CMakeFiles/image_to_ascii.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/ascii_to_image.o: src/ascii_to_image.cpp.o
-.PHONY : src/ascii_to_image.o
-
-# target to build an object file
-src/ascii_to_image.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_to_ascii.dir/build.make CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.o
-.PHONY : src/ascii_to_image.cpp.o
-
-src/ascii_to_image.i: src/ascii_to_image.cpp.i
-.PHONY : src/ascii_to_image.i
-
-# target to preprocess a source file
-src/ascii_to_image.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_to_ascii.dir/build.make CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.i
-.PHONY : src/ascii_to_image.cpp.i
-
-src/ascii_to_image.s: src/ascii_to_image.cpp.s
-.PHONY : src/ascii_to_image.s
-
-# target to generate assembly for a file
-src/ascii_to_image.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_to_ascii.dir/build.make CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.s
-.PHONY : src/ascii_to_image.cpp.s
-
-src/image_to_ascii.o: src/image_to_ascii.cpp.o
-.PHONY : src/image_to_ascii.o
-
-# target to build an object file
-src/image_to_ascii.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_to_ascii.dir/build.make CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.o
-.PHONY : src/image_to_ascii.cpp.o
-
-src/image_to_ascii.i: src/image_to_ascii.cpp.i
-.PHONY : src/image_to_ascii.i
-
-# target to preprocess a source file
-src/image_to_ascii.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_to_ascii.dir/build.make CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.i
-.PHONY : src/image_to_ascii.cpp.i
-
-src/image_to_ascii.s: src/image_to_ascii.cpp.s
-.PHONY : src/image_to_ascii.s
-
-# target to generate assembly for a file
-src/image_to_ascii.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_to_ascii.dir/build.make CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.s
-.PHONY : src/image_to_ascii.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,12 +165,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/ascii_to_image.o"
-	@echo "... src/ascii_to_image.i"
-	@echo "... src/ascii_to_image.s"
-	@echo "... src/image_to_ascii.o"
-	@echo "... src/image_to_ascii.i"
-	@echo "... src/image_to_ascii.s"
 .PHONY : help
 
 

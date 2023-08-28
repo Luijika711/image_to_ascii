@@ -1,6 +1,6 @@
 #include <iostream>
-#include "src/ascii_to_image.h"
-#include "src/image_to_ascii.h"
+#include "src/ascii_to_image.hpp"
+#include "src/image_to_ascii.hpp"
 #include <string>
 
 int main(int argc, char *argv[])

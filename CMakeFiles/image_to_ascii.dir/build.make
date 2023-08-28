@@ -69,38 +69,10 @@ include CMakeFiles/image_to_ascii.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/image_to_ascii.dir/flags.make
 
-CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.o: CMakeFiles/image_to_ascii.dir/flags.make
-CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.o: src/ascii_to_image.cpp
-CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.o: CMakeFiles/image_to_ascii.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lui/repos/image_to_ascii/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.o -MF CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.o.d -o CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.o -c /home/lui/repos/image_to_ascii/src/ascii_to_image.cpp
-
-CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lui/repos/image_to_ascii/src/ascii_to_image.cpp > CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.i
-
-CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lui/repos/image_to_ascii/src/ascii_to_image.cpp -o CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.s
-
-CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.o: CMakeFiles/image_to_ascii.dir/flags.make
-CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.o: src/image_to_ascii.cpp
-CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.o: CMakeFiles/image_to_ascii.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lui/repos/image_to_ascii/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.o -MF CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.o.d -o CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.o -c /home/lui/repos/image_to_ascii/src/image_to_ascii.cpp
-
-CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lui/repos/image_to_ascii/src/image_to_ascii.cpp > CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.i
-
-CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lui/repos/image_to_ascii/src/image_to_ascii.cpp -o CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.s
-
 CMakeFiles/image_to_ascii.dir/main.cpp.o: CMakeFiles/image_to_ascii.dir/flags.make
 CMakeFiles/image_to_ascii.dir/main.cpp.o: main.cpp
 CMakeFiles/image_to_ascii.dir/main.cpp.o: CMakeFiles/image_to_ascii.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lui/repos/image_to_ascii/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/image_to_ascii.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lui/repos/image_to_ascii/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/image_to_ascii.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image_to_ascii.dir/main.cpp.o -MF CMakeFiles/image_to_ascii.dir/main.cpp.o.d -o CMakeFiles/image_to_ascii.dir/main.cpp.o -c /home/lui/repos/image_to_ascii/main.cpp
 
 CMakeFiles/image_to_ascii.dir/main.cpp.i: cmake_force
@@ -113,15 +85,11 @@ CMakeFiles/image_to_ascii.dir/main.cpp.s: cmake_force
 
 # Object files for target image_to_ascii
 image_to_ascii_OBJECTS = \
-"CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.o" \
-"CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.o" \
 "CMakeFiles/image_to_ascii.dir/main.cpp.o"
 
 # External object files for target image_to_ascii
 image_to_ascii_EXTERNAL_OBJECTS =
 
-image_to_ascii: CMakeFiles/image_to_ascii.dir/src/ascii_to_image.cpp.o
-image_to_ascii: CMakeFiles/image_to_ascii.dir/src/image_to_ascii.cpp.o
 image_to_ascii: CMakeFiles/image_to_ascii.dir/main.cpp.o
 image_to_ascii: CMakeFiles/image_to_ascii.dir/build.make
 image_to_ascii: /usr/local/lib/libopencv_gapi.so.4.8.0
@@ -140,7 +108,7 @@ image_to_ascii: /usr/local/lib/libopencv_flann.so.4.8.0
 image_to_ascii: /usr/local/lib/libopencv_imgproc.so.4.8.0
 image_to_ascii: /usr/local/lib/libopencv_core.so.4.8.0
 image_to_ascii: CMakeFiles/image_to_ascii.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lui/repos/image_to_ascii/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable image_to_ascii"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lui/repos/image_to_ascii/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable image_to_ascii"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/image_to_ascii.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
