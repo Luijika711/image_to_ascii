@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_to_ascii.dir/build.make CMakeFiles/image_to_ascii.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/bitmap.o: src/bitmap.cpp.o
+.PHONY : src/bitmap.o
+
+# target to build an object file
+src/bitmap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_to_ascii.dir/build.make CMakeFiles/image_to_ascii.dir/src/bitmap.cpp.o
+.PHONY : src/bitmap.cpp.o
+
+src/bitmap.i: src/bitmap.cpp.i
+.PHONY : src/bitmap.i
+
+# target to preprocess a source file
+src/bitmap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_to_ascii.dir/build.make CMakeFiles/image_to_ascii.dir/src/bitmap.cpp.i
+.PHONY : src/bitmap.cpp.i
+
+src/bitmap.s: src/bitmap.cpp.s
+.PHONY : src/bitmap.s
+
+# target to generate assembly for a file
+src/bitmap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_to_ascii.dir/build.make CMakeFiles/image_to_ascii.dir/src/bitmap.cpp.s
+.PHONY : src/bitmap.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/bitmap.o"
+	@echo "... src/bitmap.i"
+	@echo "... src/bitmap.s"
 .PHONY : help
 
 

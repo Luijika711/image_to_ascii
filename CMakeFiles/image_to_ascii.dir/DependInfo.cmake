@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lui/repos/image_to_ascii/main.cpp" "CMakeFiles/image_to_ascii.dir/main.cpp.o" "gcc" "CMakeFiles/image_to_ascii.dir/main.cpp.o.d"
+  "/home/lui/repos/image_to_ascii/src/bitmap.cpp" "CMakeFiles/image_to_ascii.dir/src/bitmap.cpp.o" "gcc" "CMakeFiles/image_to_ascii.dir/src/bitmap.cpp.o.d"
   )
 
 # Targets to which this target links.

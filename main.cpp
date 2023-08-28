@@ -2,7 +2,8 @@
 #include "src/ascii_to_image.hpp"
 #include "src/image_to_ascii.hpp"
 #include <string>
-
+#include <CImg.h>
+#include <stdlib.h>
 int main(int argc, char *argv[])
 {
     if (argc > 1)
