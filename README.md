@@ -1,6 +1,8 @@
 image -> ascii and ascii -> grayscale image
 Written in C++ using https://github.com/kbuffardi/Bitmap
 
+If converting from image to ascii, you can also scale down the images
+
 requirements : unix system with imagemagick installed
 
 to run:
