@@ -12,14 +12,13 @@ private:
     Pixel rgb;
     int n, m;
     Bitmap output;
+    std::string row;
 
 public:
     ascii_to_image(std::string filepath)
     {
-        std::cout << "started ascii to image on " + filepath;
         fin.open(filepath);
-        // read input and resize matrix in case it's not a rectangle
-        std::string row;
+
         int max_len = 0;
         while (fin >> row)
         {
@@ -45,12 +44,10 @@ public:
     }
     void app()
     {
-        std::ofstream fout("output_2.txt");
         for (int i = 0; i < n; ++i)
         {
             for (int j = 0; j < m; ++j)
             {
-                fout << mat[i][j];
                 int value = 0;
 
                 int it = 0;
@@ -66,9 +63,9 @@ public:
                 rgb.green = value;
                 bmp[i][j] = rgb;
             }
-            fout << '\n';
         }
         output.fromPixelMatrix(bmp);
         output.save("output_file.bmp");
+        std::cout << "done!";
     }
 };

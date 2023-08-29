@@ -14,6 +14,8 @@ private:
     Pixel rgb;
     std::ofstream fout;
     std::string ext;
+    int coef, gcd;
+    std::vector<int> divisors;
 
 public:
     image_to_ascii(std::string filepath) // this constructor moves the file to current directory and converts it to .bmp
@@ -28,12 +30,11 @@ public:
         }
         while (filepath.back() != '/')
         {
-            this->filename.insert(this->filename.begin(), filepath.back());
-            filepath.pop_back();
+            int coef;
+            filename.pop_back();
+            std::string command = ("convert " + this->filename + "." + ext + " +matte " + this->filename + ".bmp" + " > /dev/null 2>&1");
+            system(command.c_str());
         }
-        this->filename.pop_back();
-        std::string command = ("convert " + this->filename + "." + ext + " +matte " + this->filename + ".bmp" + " > /dev/null 2>&1");
-        system(command.c_str());
     }
     std::vector<std::vector<Pixel>> simplify(const std::vector<std::vector<Pixel>> &matrix, int coef)
     {
@@ -69,6 +70,18 @@ public:
 
         return simplified;
     }
+    void ask_for_coeficient()
+    {
+        for (int i = 1; i <= gcd; ++i)
+            if (gcd % i == 0)
+                divisors.push_back(i);
+
+        std::cout << "type the scaling factor : {";
+        for (auto f : divisors)
+            std::cout << f << " ";
+        std::cout << "}";
+        std::cin >> coef;
+    }
     void app()
     {
         fout.open("output.txt");
@@ -80,37 +93,23 @@ public:
         bmp = image.toPixelMatrix();
         if (ch == 'n')
         {
-            if (image.isImage())
+            for (int i = 0; i < bmp.size(); ++i)
             {
-
-                for (int i = 0; i < bmp.size(); ++i)
+                for (int j = 0; j < bmp[i].size(); ++j)
                 {
-                    for (int j = 0; j < bmp[i].size(); ++j)
-                    {
-                        rgb = bmp[i][j];
-                        double grayscale = 0.299 * rgb.red + 0.587 * rgb.green + 0.114 * rgb.blue;
-                        char graychar = gray_map[ceil(gray_map.size() - 1) * grayscale / 255];
-                        fout << graychar;
-                    }
-                    fout << '\n';
+                    rgb = bmp[i][j];
+                    double grayscale = 0.299 * rgb.red + 0.587 * rgb.green + 0.114 * rgb.blue;
+                    char graychar = gray_map[ceil(gray_map.size() - 1) * grayscale / 255];
+                    fout << graychar;
                 }
+                fout << '\n';
             }
-            fout.close();
         }
         else
         {
-            int gcd = std::__gcd(bmp.size(), bmp[0].size());
-            std::vector<int> divisors;
-            for (int i = 1; i <= gcd; ++i)
-                if (gcd % i == 0)
-                    divisors.push_back(i);
+            gcd = std::__gcd(bmp.size(), bmp[0].size());
+            ask_for_coeficient();
 
-            std::cout << "type the scaling factor : {";
-            for (auto f : divisors)
-                std::cout << f << ", ";
-            std::cout << "}";
-            int coef;
-            std::cin >> coef;
             for (auto f : divisors)
                 if (coef == f)
                 {
@@ -128,5 +127,7 @@ public:
                     }
                 }
         }
+        std::cout << "done!";
+        fout.close();
     }
 };
