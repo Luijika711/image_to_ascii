@@ -13,5 +13,8 @@ make
 ```
 If PATH_TO_FILE ends in .txt, then the .txt will be converted to an image. Otherwise, the image will be converted to a .txt file.
 The file and the converted file will be moved to the directory of the project
-![ascii_to_image photo](https://github.com/Luijika711/image_to_ascii/assets/88895321/6600036b-a3bb-4bb2-8671-4886ad35f057)
-![image_to_ascii photo](https://github.com/Luijika711/image_to_ascii/assets/88895321/d6329276-a36f-4b48-92c9-869040a27a11)
+
+![image to ascii](https://github.com/Luijika711/image_to_ascii/blob/main/image_to_ascii%20photo.png?raw=true)
+
+![ascii to image](https://github.com/Luijika711/image_to_ascii/blob/main/ascii_to_image%20photo.png?raw=true)
+
